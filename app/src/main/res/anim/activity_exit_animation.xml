@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    View/ Tween animation starts from the bottom up
+    as if it was all placed on a stack and pulled off
+    In addition items are done sequentially and not at the same time.
+
+    -->
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="-140%"
+        android:startOffset="800"
+        android:duration="800"
+        />
+    <scale
+
+
+        android:fromXScale="1"
+        android:toXScale="0.6"
+        android:fromYScale="1"
+        android:toYScale="0.6"
+        android:pivotX="50%"
+        android:pivotY="50%"
+
+        android:duration="800"
+        android:fillBefore="false" />
+
+    <!--
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="90"
+        android:duration="1200"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        />
+        -->
+</set>

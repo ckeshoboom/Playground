@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="56dp"
+    android:background="#ffffff"
+    android:elevation="24dp"
+    android:longClickable="false"
+    android:fitsSystemWindows="false"
+    android:gravity="center_vertical"
+    android:id="@+id/menu_bottom"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_menu_bottom1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/administrator_white"
+        android:layout_weight="50"
+        android:tint="#aaaaaa"
+        android:layout_marginRight="48dp"
+        android:layout_toLeftOf="@+id/iv_menu_bottom2"/>
+    <TextView
+        android:id="@+id/lbl_menu_bottom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lead List"
+        android:textSize="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/iv_menu_bottom1"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_bottom2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/icon_grayopenbubble"
+        android:layout_weight="50"
+        android:tint="#aaaaaa"
+        android:layout_toLeftOf="@+id/iv_menu_bottom3"
+        android:layout_marginRight="24dp" />
+
+    <TextView
+        android:id="@+id/lbl_menu_bottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To-Dos"
+        android:textSize="8sp"
+        android:layout_alignLeft="@+id/iv_menu_bottom2"
+        android:layout_alignParentBottom="true"/>
+    <Space
+        android:id="@+id/space_menu_bottom"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_bottom3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/icon_messages"
+        android:layout_weight="50"
+        android:tint="#aaaaaa"
+        android:layout_toRightOf="@+id/space_menu_bottom"
+        android:layout_marginLeft="24dp" />
+
+
+    <TextView
+        android:id="@+id/lbl_menu_bottom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textSize="8sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/iv_menu_bottom3"
+        />
+
+    <ImageView
+        android:id="@+id/iv_menu_bottom4"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_lock_idle_alarm"
+
+        android:layout_toRightOf="@+id/iv_menu_bottom3"
+        android:layout_weight="50"
+        android:tint="#aaaaaa"
+        android:layout_marginLeft="48dp" />
+
+
+    <TextView
+        android:id="@+id/lbl_menu_bottom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="8sp"
+        android:layout_alignLeft="@id/iv_menu_bottom4"
+        android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+<!--         <CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kesho_chris_72px_gray"/>-->

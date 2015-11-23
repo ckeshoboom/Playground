@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_all_feed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_center_feed"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:clickable="false"
+        android:visibility="visible"
+        android:layout_margin="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:duplicateParentState="false"
+        android:background="@drawable/rounded_rectangle_frame">
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_feed_profile"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lbl_feed_date"
+
+            android:layout_margin="8dp"
+            android:src="@drawable/circle_mask"
+
+            android:background="@drawable/stallard_lacey" />
+        <!--
+                <ImageButton
+                    android:id="@+id/btn_center1_frame_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_mask"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginTop="4dp"/>
+        -->
+
+
+        <TextView
+            android:id="@+id/lbl_feed_category"
+            android:layout_width="32dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/category_qual_frame"
+            android:text="qual"
+            android:layout_alignBottom="@id/iv_feed_profile"
+            android:layout_alignRight="@id/iv_feed_profile"
+
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:alpha=".75" />
+
+        <TextView
+            android:id="@+id/lbl_feed_type"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#1581e2"
+            android:text="B"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_below="@id/lbl_feed_category"
+            android:layout_alignRight="@id/iv_feed_profile"
+            android:includeFontPadding="true"
+            android:background="@drawable/rectangle_frame"
+            />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/icon_comm_text_gray"
+            android:id="@+id/iv_feed_newbuyer"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="NEW TEXT"
+            android:textSize="8sp"
+            android:layout_toRightOf="@+id/iv_feed_newbuyer"
+            android:layout_alignBottom="@+id/iv_feed_newbuyer"
+            android:id="@+id/lbl_feed_newbuyer"/>
+
+        <TextView
+            android:id="@+id/lbl_feed_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Truman Sparks"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_feed_newbuyer"
+            android:textStyle="bold"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:id="@+id/lbl_feed_verb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="texted you"
+            android:layout_toRightOf="@id/lbl_feed_name"
+            android:layout_alignBottom="@id/lbl_feed_name"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:id="@+id/lbl_feed_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="2 mins ago"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="8sp"
+            android:clickable="false"/>
+
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/icon_location"
+            android:layout_below="@+id/lbl_feed_name"
+            android:id="@+id/iv_feed_address"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/lbl_feed_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="129 James Avenue, Smyrna, GA"
+            android:layout_toRightOf="@+id/iv_feed_address"
+            android:layout_alignBottom="@+id/iv_feed_address"
+            android:textSize="12sp"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/lbl_feed_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Yo I am unable to see homes until saturday.What's your schedule like this weekend? Suck these houses are selling too fast"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_feed_profile"
+            android:layout_below="@+id/lbl_feed_name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:clickable="false"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/divider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"/>
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_action_call"
+            android:src="@drawable/icon_comm_phone_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:tint="#1983e2"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/lbl_action_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL NOW"
+            android:layout_alignBottom="@+id/iv_action_call"
+            android:layout_toRightOf="@+id/iv_action_call"
+            android:textSize="16sp"
+            android:textColor="#1983e2"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_action_text"
+            android:src="@drawable/icon_greenbubble"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:tint="#1983e2"/>
+
+        <TextView
+            android:id="@+id/lbl_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT NOW"
+            android:layout_alignBottom="@+id/iv_action_text"
+            android:layout_toRightOf="@+id/iv_action_text"
+            android:textSize="16sp"
+            android:textColor="#1983e2"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

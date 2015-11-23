@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_conv_item_date_visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.boomtown.ckesho.playground.FragmentHolderActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf">
+
+        <TextView
+            android:id="@+id/tv_conv_item_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

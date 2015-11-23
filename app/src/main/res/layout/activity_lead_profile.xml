@@ -1,0 +1,524 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context="com.android.boomtown.Activities.LeadProfileActivity">
+
+    <!-- Lead Profile  Header-->
+    <RelativeLayout
+        android:id="@+id/leadProfileHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/btn_leadProfileBack"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:src="@drawable/icon_backarrow"
+            android:textSize="18sp"
+            android:textColor="#1581E2"
+            android:textStyle="bold"
+            android:clickable="true"
+
+
+            android:paddingLeft="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/lbl_leadProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boom Town"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="false"
+            android:textSize="20sp"
+            android:textColor="#444444"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:paddingBottom="12dp"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/leadProfileScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leadProfileHeader">
+        <!--android:layout_above="@+id/leadProfilePropertyBlock"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/leadProfileLeadPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:id="@+id/lbl_leadProfileInitials"
+                    android:layout_alignBottom="@+id/leadProfileLeadPhotoImage"
+                    android:layout_alignLeft="@+id/leadProfileLeadPhotoImage"
+                    android:text=":-)"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:background="#cccccc"
+
+                    android:textSize="36sp"
+                    android:foregroundGravity="fill"
+                    android:textIsSelectable="true" />
+                <ImageView
+                    android:id="@+id/leadProfileLeadPhotoImage"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/user_no_photo"
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:baselineAlignBottom="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/leadProfileLeadPhotoFrame"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+
+                    android:scaleType="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/circle_mask"
+                    android:baselineAlignBottom="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fadeScrollbars="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_leadProfilePhoto"
+                    android:layout_below="@+id/leadProfileLeadPhotoImage"
+                    android:divider="@drawable/divider_999999"
+                    android:showDividers="middle"
+                    android:dividerPadding="15dp"
+
+                    style="?android:attr/showDividers">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:id="@+id/lbl_leadProfileLeadPhotoLeadType"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:textColor="#1581e2"
+                            android:text="B"
+
+                            android:gravity="center"
+                            android:includeFontPadding="true"
+                            android:background="@drawable/rectangle_frame"
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:id="@+id/lbl_leadProfileLeadPhotoLeadCat"
+                            android:layout_width="42dp"
+                            android:layout_height="18dp"
+                            android:textColor="#ffffff"
+                            android:background="#81a441"
+                            android:text="qual"
+
+                            android:gravity="center"
+                            android:includeFontPadding="true"
+                            android:textIsSelectable="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:divider="@drawable/divider_999999"
+                        android:showDividers="middle"
+                        android:dividerPadding="10dp"
+                        android:layout_marginBottom="10.5dp"
+                        android:layout_marginTop="10.5dp"
+                        android:gravity="center"
+                        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:drawableTop="@drawable/icon_comm_email_green"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:id="@+id/btn_leadProfileEmail"
+                            android:paddingRight="70dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/icon_comm_phone_green"
+                            android:text="Phone"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:id="@+id/btn_leadProfilePhone"
+                            android:paddingLeft="70dp"
+                            />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lbl_leadProfileLeadDescriptionText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lead Description"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="4dp"
+                            android:textSize="12sp"
+                            android:minHeight="20sp"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:id="@+id/lbl_leadProfileLeadDescriptionText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="none"
+                            android:layout_below="@+id/lbl_leadProfileLeadDescriptionText1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="4dp"
+                            android:gravity="center_horizontal"
+                            android:textSize="14sp"
+                            android:textIsSelectable="true" />
+
+                    </RelativeLayout>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/leadProfileLeadDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leadProfileLeadPhoto"
+                android:contextClickable="false"
+                android:clickable="false">
+
+
+                <!--these textviews are for current contact info lines 1-6-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_leadProfileDesc1"
+
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="7.5dp"
+                        android:gravity="left"
+                        android:layout_gravity="center_horizontal"
+                        android:divider="#000000"
+                        android:dividerPadding="2dp">
+                        <!-- col1a 1-6 goes here-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone:"
+                            android:textSize="14sp"
+                            android:clickable="false"
+                            android:contextClickable="false"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email:"
+                            android:contextClickable="false"
+                            android:clickable="false"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location:"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average Price:"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Visit:"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registered:"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Contacted:"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Site Visits:"
+                            android:textIsSelectable="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Source:"
+                            android:textIsSelectable="true" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="7.5dp"
+                        android:gravity="left">
+                        <!-- col2b 1-6 goes here-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 1"
+                            android:textColor="#1581e2"
+                            android:id="@+id/lbl_leadProfilePhone"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 2"
+                            android:textColor="#1581e2"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/lbl_leadProfileEmail"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 3"
+                            android:id="@+id/lbl_leadProfileLocation"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 4"
+                            android:textColor="#669900"
+                            android:id="@+id/lbl_leadProfilePrice"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 5"
+                            android:id="@+id/lbl_leadProfileLastVisit"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 6"
+                            android:id="@+id/lbl_leadProfileRegistered"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 7b"
+                            android:id="@+id/lbl_leadProfileLastContacted"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 8b"
+                            android:id="@+id/lbl_leadProfileSiteVisit"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 9b"
+                            android:id="@+id/lbl_leadProfileEalert"/>
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 10b"
+                            android:id="@+id/lbl_leadProfileLine10"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 11b"
+                            android:id="@+id/lbl_leadProfileSmartDrip"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 12b"
+                            android:id="@+id/lbl_leadProfileAgent"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 13b"
+                            android:id="@+id/lbl_leadProfileLender"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 14b"
+                            android:id="@+id/lbl_leadProfileSource"
+                            android:ellipsize="end"
+                            android:textIsSelectable="true" />
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="line 15b"
+                            android:id="@+id/lbl_leadProfileOtherPhone"
+                            android:textIsSelectable="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/ll_leadProfileDesc1"/>
+
+                <!--Starts out hidden-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_leadProfileDesc2"
+                    android:layout_below="@+id/ll_leadProfileDesc1"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="7.5dp"
+                        android:gravity="right">
+                        <!-- col1b 7-15 goes here-->
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="7.5dp"
+                        android:gravity="left">
+                        <!-- col2b 7-12 goes here-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/leadProfileShowHideButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show More/Less info..."
+                    android:layout_below="@+id/ll_leadProfileDesc2"
+                    android:drawableLeft="@android:drawable/arrow_up_float"
+                    android:textColor="#1581e2"
+                    android:layout_margin="4dp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <!-- temporarily gone-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@id/leadProfileHeader"
+        android:id="@+id/leadProfilePropertyBlock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/action_settings"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_leadProfilePropertyBlock"
+            android:layout_centerHorizontal="true"
+            android:textOff="Favorited"
+            android:textOn="Viewed"
+            android:layout_margin="4dp"/>
+
+        <ListView
+            android:id="@+id/list_leadProfilePropertyBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="125dp"
+            android:layout_below="@+id/btn_leadProfilePropertyBlock"
+            android:layout_margin="4dp"
+            android:nestedScrollingEnabled="true"
+
+            ></ListView>
+
+
+    </RelativeLayout>
+    <include
+        layout="@layout/helper_template"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_frag_holder_toolbar"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_frag_holder_toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="@android:drawable/bottom_bar">
+        <ImageButton
+            android:id="@+id/btn_fragment_holder_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"/>
+
+        <ImageButton
+            android:id="@+id/btn_fragment_holder_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"/>
+
+        <ImageButton
+            android:id="@+id/btn_fragment_holder_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"/>
+
+        <ImageButton
+            android:id="@+id/btn_fragment_holder_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"/>
+    </LinearLayout>
+</RelativeLayout>

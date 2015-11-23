@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/propertyBlockImage"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star"/>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/lbl_propertyBlockPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$635,000"
+            android:textColor="#669900" />
+        <TextView
+            android:id="@+id/lbl_propertyBlockArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manhattan Central Park" />
+        <TextView
+            android:id="@+id/lbl_propertyBlockStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 Trump Towers" />
+        <TextView
+            android:id="@+id/lbl_propertyBlockMLS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MLS 1314673"
+            />
+
+    </LinearLayout>
+</LinearLayout>

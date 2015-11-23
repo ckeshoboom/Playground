@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android_1="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_btn_add"
+        android:title="add"
+        android:titleCondensed="+"
+        android:icon="@drawable/administrator_white"
+        android_1:showAsAction="ifRoom|withText"
+        android:checkable= "false"
+        android:visible="true"
+        android:enabled="true"
+     />
+
+    <item android:id="@+id/menu_btn_search"
+        android:title="search"
+        android:titleCondensed="search"
+        android:icon="@android:drawable/ic_menu_search"
+        android_1:showAsAction="ifRoom|withText"
+        android:checkable= "false"
+        android:visible="true"
+        android:enabled="true"
+        />
+</menu>

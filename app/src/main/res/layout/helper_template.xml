@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_helper_press"
+    android:background="#8c000000">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can click here to make and log your emails"
+        android:id="@+id/lbl_helper_1"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/lbl_helper_2"
+        android:gravity="center_horizontal"
+        android:background="#82000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Same goes for the phone icon"
+        android:id="@+id/lbl_helper_2"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/iv_helper_press"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="158dp"
+        android:gravity="center_horizontal"
+        android:background="#82000000"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_helper_press"
+        android:src="@drawable/gesture_press"
+        android:layout_marginTop="200dp"
+        android:layout_toLeftOf="@+id/space_center" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space_center"/>
+
+</RelativeLayout>
